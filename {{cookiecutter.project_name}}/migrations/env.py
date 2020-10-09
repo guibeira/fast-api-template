@@ -5,10 +5,11 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))  # noqa
+
 from {{cookiecutter.project_slug}}.config import settings
 from {{cookiecutter.project_slug}}.main import db, get_app
 
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))  # noqa
 
 config = context.config
 fileConfig(config.config_file_name)

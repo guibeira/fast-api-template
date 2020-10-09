@@ -7,6 +7,9 @@ lint:
 install:
 	poetry install
 
+migrate:
+	poetry run alembic upgrade head
+
 run:
 	poetry run uvicorn {{cookiecutter.project_slug}}.main:app --reload
 
