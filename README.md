@@ -33,3 +33,6 @@ Run
 ```
 make run
 ```
+
+## Thanks
+Thanks [fvlima](https://github.com/fvlima), all this template is based on your [example](https://github.com/fvlima/sample-fast-api)
